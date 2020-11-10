@@ -5,7 +5,7 @@ import sys
 
 def read_file(path_to_file, mode="rb", by_lines=False):
 
-    """ Reads file if it exists. """
+    """ Read file if it exists. """
 
     try:
         if by_lines:
@@ -21,7 +21,7 @@ def read_file(path_to_file, mode="rb", by_lines=False):
 
 def check_file_hash(path_to_file, alg, h):
 
-    """ Compares file's hash sum with the given argument. """
+    """ Compare file's hash sum with the given argument. """
 
     ok = False
     file = read_file(path_to_file, "rb")
